@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HealthController {
-	@GetMapping("/status")
+	@GetMapping("/hstatus")
 	public Map<String, Object> getStatus() {
         Map<String, Object> status = new HashMap<>();
         status.put("message", "Servidor en funcionamiento");
